@@ -56,16 +56,30 @@ can input different python types.
 Unlike lists and tuples they are unordered.This means sets do not record element position. 
 Sets only have unique elements. This means there is only one of a particular element in a set.
 ```
->>> set1 = {"a", "a", "b", "c"}
->>> set1
+ set1 = {"a", "a", "b", "c"}
+ set1
 {'a', 'c', 'b'}
->>> set1 = {"a":"12", "a" : "45", "b": "56", "c": "98"}
->>> set1
+ set1 = {"a":"12", "a" : "45", "b": "56", "c": "98"}
+ set1
 {'a': '45', 'b': '56', 'c': '98'}
->>> set1 = {"a":"12", "a" : "45", "b": "56", "c": "98"}
->>> set1
+ set1 = {"a":"12", "a" : "45", "b": "56", "c": "98"}
+ set1
 {'a': '45', 'b': '56', 'c': '98'}
 
+ list = [1,2,4,"tiger","tiger", "tylor"]
+ set(list)
+{1, 2, 4, 'tylor', 'tiger'}
+ 
+ 
+ set2 = {"a","b","c","d","e"}
+ set2.add("f")
+ set2
+{'f', 'e', 'b', 'a', 'd', 'c'}
+ set2.add("f")
+ set2
+{'f', 'e', 'b', 'a', 'd', 'c'}
+ set2.remove("f")
+ {'e', 'b', 'a', 'd', 'c'}
 ```
 
 
