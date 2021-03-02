@@ -106,7 +106,35 @@ set1.symmetric_difference(set2)
 {4}
 
 ```
-
+# Dictionaries
+The keys have to be immutable and unique
+The values can be immutable, mutable and and duplicates
+```
+dict = {"a" : "b", "1" : 2}
+ dict
+{'a': 'b', '1': 2}
+ dict["1"]
+2
+ dict["a"]
+ dict["a"] = "new_value"
+ del(dict["a"])
+ 
+ "a" in dict
+ False
+ 
+ dict.keys()
+ dict.values()
+ 
+ dict.get("a")
+ res --> "b"
+ 
+ dict.get("c", None)
+ res --> None
+ 
+ dict.get("c", "X")
+ res --> "X"
+ 
+```
 
 
 
