@@ -31,7 +31,7 @@ del(a[0])
  id(tuple)
 140674943825304
 ```
-It means you can do this:
+It means you can do these:
 ```
  list = [1,3,4]
  list2 = list
