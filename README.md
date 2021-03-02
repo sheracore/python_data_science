@@ -49,3 +49,29 @@ It means you can do these:
  list2
 [1, 3, 4] 
 ```
+
+# Sets
+Sets are a type of collection. This means that like lists and tuples, you
+can input different python types. 
+Unlike lists and tuples they are unordered.This means sets do not record element position. 
+Sets only have unique elements. This means there is only one of a particular element in a set.
+```
+>>> set1 = {"a", "a", "b", "c"}
+>>> set1
+{'a', 'c', 'b'}
+>>> set1 = {"a":"12", "a" : "45", "b": "56", "c": "98"}
+>>> set1
+{'a': '45', 'b': '56', 'c': '98'}
+>>> set1 = {"a":"12", "a" : "45", "b": "56", "c": "98"}
+>>> set1
+{'a': '45', 'b': '56', 'c': '98'}
+
+```
+
+
+
+
+
+
+
+
