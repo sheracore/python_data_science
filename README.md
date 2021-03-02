@@ -80,6 +80,30 @@ Sets only have unique elements. This means there is only one of a particular ele
 {'f', 'e', 'b', 'a', 'd', 'c'}
  set2.remove("f")
  {'e', 'b', 'a', 'd', 'c'}
+ 
+'a' in set2
+True
+
+
+----- & ----
+
+ set1 = {"a","b","c","d","e"}
+ set2 = {"a", "b", "name"}
+ set3 = set1 & set2
+ set3
+{'a', 'b'}
+
+----- union ----
+set1.union(set2)
+{'d', 'c', 'e', 'b', 'a', 'name'}
+
+---- issubset ----
+ set1 = {1,2,3}
+ set2 = {1,2,3,4}
+ set1.issubset(set1)
+
+
+
 ```
 
 
