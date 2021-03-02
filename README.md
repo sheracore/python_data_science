@@ -15,7 +15,7 @@ list = [1,2,3]
 del(a[0])
 ```
 
-## immutable and mutable
+## Immutable and mutable
 ### list is mutable and tuple is immutable the following id is id refrenced in ram
 ```
  list = [1,2,3]
@@ -41,4 +41,11 @@ It means you can do this:
  list2
 [1, 3, 4, 5, 6, 7] 
 
+ list = [1,3,4]
+ list2 = list[:]
+ list2
+[1, 3, 4]
+ list.append(45)
+ list2
+[1, 3, 4] 
 ```
