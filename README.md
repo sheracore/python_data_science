@@ -102,7 +102,8 @@ set1.union(set2)
  set2 = {1,2,3,4}
  set1.issubset(set1)
 
-
+set1.symmetric_difference(set2)
+{4}
 
 ```
 
