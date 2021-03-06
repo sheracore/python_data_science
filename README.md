@@ -244,11 +244,31 @@ print(df.head()) ----> First five line
 ----XLSX----
 df = pd.read_csv("SLA_SEC_4G_A7.xlsx")
 print(df.head()) ----> First five line
+print(df[["VOLTE_CDR"]]) ---> Just a column
+print(df[["VOLTE_CDR","PAGING_DELETATION_RATE"]]) ---> some of columns
+print(df.ix[0,0]) ---> first row and first column
+print(df.ix[1,0]) ---> second row and first column
+print(df.ix[0,2])
+print(df.ix[0,"PAGING_DELETATION_RATE"])
+print(df.ix[0,"VOLTE_CDR"])
+print(df.ix[1,"PAGING_DELETATION_RATE"])
+print(df.ix[1,"VOLTE_CDR"])
+print(df.ix[1,"PAGING_DELETATION_RATE"])
+print(df.ix[1,"VOLTE_CDR"])
+
+
 
 df is data frame that is comprised of rows and columns,
 We can create a data frame out of a dictionary
 
+dict = {"a":[1,2,3,4,5],
+        "b":[6,7,8,9,0],
+        "c":["a","b","c","d","e"]}
+        
 
+df = pd.DataFrame(dict)
+print(df[["a"]]) ---> Just a column
+print(df[["a","b"]]) ---> some of columns
 ```
 
 
