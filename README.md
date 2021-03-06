@@ -253,8 +253,9 @@ print(df.ix[0,"PAGING_DELETATION_RATE"])
 print(df.ix[0,"VOLTE_CDR"])
 print(df.ix[1,"PAGING_DELETATION_RATE"])
 print(df.ix[1,"VOLTE_CDR"])
-print(df.ix[1,"PAGING_DELETATION_RATE"])
-print(df.ix[1,"VOLTE_CDR"])
+print(df.ix[0:2, 0:3]) ----> First two rows and three columns
+print(df.ix[0:2,'VOLTE_CDR':'PAGING_DELETATION_RATE']) ----> First two rows columns between 'VOLTE_CDR' and 'PAGING_DELETATION_RATE'
+
 
 
 
@@ -270,12 +271,4 @@ df = pd.DataFrame(dict)
 print(df[["a"]]) ---> Just a column
 print(df[["a","b"]]) ---> some of columns
 ```
-
-
-
-
-
-
-
-
 
