@@ -244,6 +244,8 @@ print(df.head()) ----> First five line
 ----XLSX----
 df = pd.read_csv("SLA_SEC_4G_A7.xlsx")
 print(df.head()) ----> First five line
+
+
 print(df[["VOLTE_CDR"]]) ---> Just a column
 print(df[["VOLTE_CDR","PAGING_DELETATION_RATE"]]) ---> some of columns
 print(df.iloc[0,0]) ---> first row and first column
