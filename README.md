@@ -231,7 +231,24 @@ with open is better practice because it automaticlly closes the file
 ```
 with open(""/resources/data/example.txt"", "w") as f:
     file_read = f.write("New Line")
-    
+```
+
+# Pandas
+```
+import pandas as pd
+
+----CSV----
+df = pd.read_csv("SLA_SEC_4G_A7.csv")
+print(df.head()) ----> First five line
+
+----XLSX----
+df = pd.read_csv("SLA_SEC_4G_A7.xlsx")
+print(df.head()) ----> First five line
+
+df is data frame that is comprised of rows and columns,
+We can create a data frame out of a dictionary
+
+
 ```
 
 
