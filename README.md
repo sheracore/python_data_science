@@ -213,6 +213,20 @@ dir() method is useful for obtaining the list of data attributes and methods ass
 dir(Circle)
 ```
 
+# Reading file with open
+```
+file1 = open("/resources/data/example.txt", "w")
+file1.close
+
+with open(""/resources/data/example.txt"", "w") as f:
+    file_read = f.read()
+
+print(f.closed()) ---> True
+print(file_read) ---> You can't access to file_read out of with indention
+
+with open is better practice because it automaticlly closes the file
+```
+
 
 
 
