@@ -249,12 +249,12 @@ print(df[["VOLTE_CDR","PAGING_DELETATION_RATE"]]) ---> some of columns
 print(df.iloc[0,0]) ---> first row and first column
 print(df.iloc[1,0]) ---> second row and first column
 print(df.iloc[0,2])
-print(df.iloc[0,"PAGING_DELETATION_RATE"])
-print(df.iloc[0,"VOLTE_CDR"])
-print(df.iloc[1,"PAGING_DELETATION_RATE"])
-print(df.iloc[1,"VOLTE_CDR"])
-print(df.iloc[0:2, 0:3]) ----> First two rows and three columns
-print(df.iloc[0:2,'VOLTE_CDR':'PAGING_DELETATION_RATE']) ----> First two rows columns between 'VOLTE_CDR' and 'PAGING_DELETATION_RATE'
+print(df.loc[0,"PAGING_DELETATION_RATE"])
+print(df.loc[0,"VOLTE_CDR"])
+print(df.loc[1,"PAGING_DELETATION_RATE"])
+print(df.loc[1,"VOLTE_CDR"])
+print(df.loc[0:2, 0:3]) ----> First two rows and three columns
+print(df.loc[0:2,'VOLTE_CDR':'PAGING_DELETATION_RATE']) ----> First two rows columns between 'VOLTE_CDR' and 'PAGING_DELETATION_RATE'
 
 
 
