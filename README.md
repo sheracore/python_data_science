@@ -146,8 +146,14 @@ ArtistNames("Hassan", "Ali", "Mohsen")
 ### Global Scope
 ```
 x is global variable
+ArtistNames(x):
+    return x + " ghaffari"
+
 x="mohamad"
-ArtistNames(x)
+ArtistNames(x):
+print(x):
+    "mohamad ghaffari"
+
 ```
 
 
