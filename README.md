@@ -227,6 +227,13 @@ print(file_read) ---> You can't access to file_read out of with indention
 with open is better practice because it automaticlly closes the file
 ```
 
+# Writing file with opne
+```
+with open(""/resources/data/example.txt"", "w") as f:
+    file_read = f.write("New Line")
+    
+```
+
 
 
 
