@@ -153,8 +153,19 @@ x="mohamad"
 ArtistNames(x):
 print(x):
     "mohamad ghaffari"
-
 ```
+### Set variable global in function
+```
+def pinkfloyd():
+    global ClaimedSales
+    ClaimedSales = "45 million"
+    return ClaimedSales
+
+pinkfloyd()
+print(ClaimedSales)
+"45 million"
+```
+
 
 
 
