@@ -136,7 +136,7 @@ dict = {"a" : "b", "1" : 2}
  
 ```
 
-# Function
+# Functions
 ```
 def ArtistNames(*names):
     print(names)
@@ -164,6 +164,46 @@ def pinkfloyd():
 pinkfloyd()
 print(ClaimedSales)
 "45 million"
+```
+
+# Objects and Classes
+### Function init is a constructor
+```
+class Circle(object):
+
+    def __init__(self, radius, color):
+      # Attributes
+      self.radius = radius
+      self.color = color
+
+
+class Rectangle(object):
+
+    def __init__(self, height, width, color):
+      # Attributes
+      self.height = height
+      self.width = width
+      self.color = color
+   
+Now we can have several ojects of any class
+
+C1 = Circle(10, "red")
+C2 = Circle(0.001, "Pink")
+C1.color = "Blue"
+C2.radius = 1
+
+Class methods
+
+class Circle(object):
+
+    def __init__(self, radius, color):
+        # Attributes
+        self.radius = radius
+        self.color = color
+      
+    def add_radius(self,r):
+        self.radius = self.radius + r
+
 ```
 
 
