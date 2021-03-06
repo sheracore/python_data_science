@@ -192,7 +192,8 @@ C2 = Circle(0.001, "Pink")
 C1.color = "Blue"
 C2.radius = 1
 
-Class methods
+
+Class methods:
 
 class Circle(object):
 
@@ -204,6 +205,12 @@ class Circle(object):
     def add_radius(self,r):
         self.radius = self.radius + r
 
+Default value in constructor:
+def __init__(self, radius=10, color='red'):
+
+dir(NmaeOfObject)
+dir() method is useful for obtaining the list of data attributes and methods associated
+dir(Circle)
 ```
 
 
