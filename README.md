@@ -136,6 +136,21 @@ dict = {"a" : "b", "1" : 2}
  
 ```
 
+# Function
+```
+def ArtistNames(*names):
+    print(names)
+    
+ArtistNames("Hassan", "Ali", "Mohsen")
+```
+### Global Scope
+```
+x is global variable
+x="mohamad"
+ArtistNames(x)
+```
+
+
 
 
 
