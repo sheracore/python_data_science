@@ -246,15 +246,15 @@ df = pd.read_csv("SLA_SEC_4G_A7.xlsx")
 print(df.head()) ----> First five line
 print(df[["VOLTE_CDR"]]) ---> Just a column
 print(df[["VOLTE_CDR","PAGING_DELETATION_RATE"]]) ---> some of columns
-print(df.ix[0,0]) ---> first row and first column
-print(df.ix[1,0]) ---> second row and first column
-print(df.ix[0,2])
-print(df.ix[0,"PAGING_DELETATION_RATE"])
-print(df.ix[0,"VOLTE_CDR"])
-print(df.ix[1,"PAGING_DELETATION_RATE"])
-print(df.ix[1,"VOLTE_CDR"])
-print(df.ix[0:2, 0:3]) ----> First two rows and three columns
-print(df.ix[0:2,'VOLTE_CDR':'PAGING_DELETATION_RATE']) ----> First two rows columns between 'VOLTE_CDR' and 'PAGING_DELETATION_RATE'
+print(df.iloc[0,0]) ---> first row and first column
+print(df.iloc[1,0]) ---> second row and first column
+print(df.iloc[0,2])
+print(df.iloc[0,"PAGING_DELETATION_RATE"])
+print(df.iloc[0,"VOLTE_CDR"])
+print(df.iloc[1,"PAGING_DELETATION_RATE"])
+print(df.iloc[1,"VOLTE_CDR"])
+print(df.iloc[0:2, 0:3]) ----> First two rows and three columns
+print(df.iloc[0:2,'VOLTE_CDR':'PAGING_DELETATION_RATE']) ----> First two rows columns between 'VOLTE_CDR' and 'PAGING_DELETATION_RATE'
 
 
 
