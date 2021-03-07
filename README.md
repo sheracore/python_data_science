@@ -289,6 +289,9 @@ for item in list:
 
 print(df["VOLTE_CDR"] >= 0.3582) ---> res is true and false
 print(df[df["VOLTE_CDR"] >= 0.3582]) ---> res is values with this condition" >= 0.3582 "
+df1 = df[df["VOLTE_CDR"] >= 0.3582]
+
+We can save new DataFrame with df1.to_csv('new_values.csv')
 
 
 ```
