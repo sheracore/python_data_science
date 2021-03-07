@@ -272,5 +272,24 @@ dict = {"a":[1,2,3,4,5],
 df = pd.DataFrame(dict)
 print(df[["a"]]) ---> Just a column
 print(df[["a","b"]]) ---> some of columns
+
+df["VOLTE_CDR"].unique()
+
+df = pd.read_csv("SLA_SEC_4G_A7.csv")
+print(df["VOLTE_CDR"].unique())
+list = df["VOLTE_CDR"].unique()
+for item in list:
+    #print(item)
+    pass
+
+list = df["VOLTE_CDR"] >= 0.3582
+for item in list:
+    #print(item)
+    pass
+
+print(df["VOLTE_CDR"] >= 0.3582) ---> res is true and false
+print(df[df["VOLTE_CDR"] >= 0.3582]) ---> res is values with this condition" >= 0.3582 "
+
+
 ```
 
