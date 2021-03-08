@@ -326,6 +326,11 @@ gamefinder = leaguegamefinder.LeagueGameFinder(team_id_nullable=warriors_id)
 games = gamefinder.get_data_frames()[0]
 print(games.head())
 
+games_home = games[games['MATCHUP'] == 'BKN @ HOU']
+games_away = games[games['MATCHUP'] =='BKN vs. DAL']
+print(games_home.head())
+print(games_away.head())
+
 
 ```
 
