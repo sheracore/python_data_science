@@ -295,4 +295,30 @@ We can save new DataFrame with df1.to_csv('new_values.csv')
 
 ```
 # Simple APIs
+```
+import pandas as pd
+from nba_api.stats.static import teams
+
+Add api result to a DataFrame type
+
+nba_teams = teams.get_teams()
+keys = nba_teams[0].keys()
+one_dict = {key:[] for key in keys}
+
+for item in nba_teams:
+    for key, value in item.items():
+        one_dict[key].append(value)
+
+df_teams = pd.DataFrame(one_dict)
+#print(df_teams)
+
+df_warriors = df_teams[df_teams['state'] == 'New York']
+print(df_warriors)
+
+How to access ir id's of df result:
+
+warriors_id = df_warriors[["id"]].values
+print(warriors_id)
+
+```
 
