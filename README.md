@@ -293,6 +293,6 @@ df1 = df[df["VOLTE_CDR"] >= 0.3582]
 
 We can save new DataFrame with df1.to_csv('new_values.csv')
 
-
 ```
+# Simple APIs
 
