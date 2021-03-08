@@ -335,6 +335,12 @@ games_away = games[games['MATCHUP'] =='BKN vs. DAL']
 print(games_home.head())
 print(games_away.head())
 
-
 ```
 
+# 1D Numpy
+Numpy is a library for scientific computing. It has many useful functions. There are many other advantages
+like speed an memory. Numpy is also the basis for pandas,.
+```
+
+
+```
