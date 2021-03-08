@@ -225,6 +225,10 @@ print(f.closed()) ---> True
 print(file_read) ---> You can't access to file_read out of with indention
 
 with open is better practice because it automaticlly closes the file
+
+To append to a file use this:
+with open("Example3.txt","a") as file1:
+    file1.write("This is line C\n")
 ```
 
 # Writing file with opne
