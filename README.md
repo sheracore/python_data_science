@@ -317,8 +317,15 @@ print(df_warriors)
 
 How to access ir id's of df result:
 
-warriors_id = df_warriors[["id"]].values
-print(warriors_id)
+warriors_id = df_warriors[["id"]].values res ----> [[1610612751] [1610612752]]
+
+
+from nba_api.stats.endpoints import leaguegamefinder
+
+gamefinder = leaguegamefinder.LeagueGameFinder(team_id_nullable=warriors_id)
+games = gamefinder.get_data_frames()[0]
+print(games.head())
+
 
 ```
 
