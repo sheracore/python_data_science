@@ -338,8 +338,32 @@ print(games_away.head())
 ```
 
 # 1D Numpy
-Numpy is a library for scientific computing. It has many useful functions. There are many other advantages
-like speed an memory. Numpy is also the basis for pandas,.
+## Numpy is a library for scientific computing. It has many useful functions. There are many other advantages 
+## like speed an memory. Numpy is also the basis for pandas,.
+```
+A "numpy" array or "ndarray" is similar to a list. It's usually fixed in size and each
+element is of the same type, in this case, integers. We can cast a list to a numpy array
+[0,1,2,3,4]
+
+ndim:
+represents the number of array dimensions or the rank of the array, in this case one.
+shape:
+The attribute "shape” is a tuple of integers indicating the size of the array in each dimension.
+
+a = np.array([0,1,2,3,4])
+print(a[0],a[3])
+print(a,"@@", type(a),"@@", a.dtype, "@@",a.size,"@@",a.ndim,"@@","@@",)
+
+# Change the values
+a[0] = 50
+print(a)
+
+Change two number:
+d[1:3] = -1,-2
+
+
+
+
 ```
 
 
