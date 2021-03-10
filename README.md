@@ -441,4 +441,5 @@ np.pi ==> pi in mathmathic
 x = np.array([0, np.pi/2, np.pi])
 y = np.sin(x)
 ```
-
+np.pi
+![pi](x6.png)
