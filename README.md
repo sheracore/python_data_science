@@ -365,4 +365,4 @@ Vector
 Vector addition is a widely used operation in data science. Consider the vector 'u' with
 
 ```
-![vector in python][x2.png]
+![vector in python](x2.png)
