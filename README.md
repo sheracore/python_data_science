@@ -424,5 +424,10 @@ v = np.array([3,1])
 result = np.dot(u,v)
 ==> 5
 
+Adding Constant to an numpy arrey
+u = np.array([1,2,3,-1])
+z = u+1
+z:array([2,3,4,0])
 ```
+
 
