@@ -384,4 +384,5 @@ z = u-v
 ==> [1,-1]
 ```
 Array multiplication with a Scalar
+
 ![muliplication in numpy](x3.png)
