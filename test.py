@@ -77,6 +77,9 @@ u = np.array([1,2])
 v = np.array([4,5])
 z = u*v
 print(z)
+result = np.dot(u,v)
+print(result)
+
 
 
 
