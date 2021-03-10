@@ -424,5 +424,21 @@ v = np.array([3,1])
 result = np.dot(u,v)
 ==> 5
 
+Adding Constant to an numpy arrey
+u = np.array([1,2,3,-1])
+z = u+1
+z:array([2,3,4,0])
+```
+Universal Functions
+```
+u = np.array([1,2,3,-1])
+mean_a = a.mean()
+1/4*(1+2+3-2)
+==> 1
+And ther are many other functions
+max_a = a.max()
+np.pi ==> pi in mathmathic
+x = np.array([0, np.pi/2, np.pi])
+y = np.sin(x)
 ```
 
