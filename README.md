@@ -442,4 +442,14 @@ x = np.array([0, np.pi/2, np.pi])
 y = np.sin(x)
 ```
 np.pi
+
 ![pi](x6.png)
+
+np.linspace
+
+![pi](x7.png)
+![pi](x8.png)
+![pi](x9.png)
+
+
+
