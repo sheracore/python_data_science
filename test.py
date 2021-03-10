@@ -1,5 +1,5 @@
 import pandas as pd
-
+import numpy as np
 from nba_api.stats.static import teams
 
 
@@ -33,16 +33,16 @@ print(games_away.head())
 
 
 
-df = pd.read_csv("SLA_SEC_4G_A7.csv")
-#print(df.head())
-#print(df["VOLTE_CDR"].unique())
+df = pd.read_csv("SLA-3G_A3.csv")
+print(df.head())
+#print(df["RRC_SETUP_SR_ALL"].unique())
 
-list = df["VOLTE_CDR"].unique()
+list = df["RRC_SETUP_SR_ALL"].unique()
 for item in list:
     #print(item)
     pass
 
-list = df["VOLTE_CDR"] >= 0.3582
+list = df["RRC_SETUP_SR_ALL"] >= 0.3582
 for item in list:
     #print(item)
     pass
@@ -65,10 +65,19 @@ dict = {"a":[1,2,3,4,5],
 df = pd.DataFrame(dict)
 
 
-with open("SLA_SEC_4G_A7.csv", "r")as file:
+with open("SLA-3G_A3.csv", "r")as file:
     FileContent = file.readline()
-    for item in FileContent:
-        print(item)
+    print(FileContent)
 
 #print(df)
 #print(df[["b"]])
+
+
+u = np.array([1,2])
+v = np.array([4,5])
+z = u*v
+print(z)
+
+
+
+
