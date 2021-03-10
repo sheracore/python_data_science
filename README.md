@@ -414,5 +414,15 @@ v = np.array([3,2])
 z = u*v
 ==> [3,4]
 ```
+Dot Product
 
+![Dot Product](x5.png)
+
+```
+u = np.array([1,2])
+v = np.array([3,1])
+result = np.dot(u,v)
+==> 5
+
+```
 
