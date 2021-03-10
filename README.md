@@ -384,4 +384,30 @@ z = u-v
 ==> [1,-1]
 ```
 Array multiplication with a Scalar
+
 ![muliplication in numpy](x3.png)
+
+```
+y=np.array([1,2])
+z = 2*y
+==> [2,4]
+
+but if
+y  [1,2]
+2*z
+[1, 2, 1, 2]
+
+y = [1,2]
+z=[]
+for n in y:
+    z.append(2*n)
+z = [2,4
+
+
+
+
+
+
+```
+
+
