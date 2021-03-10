@@ -403,11 +403,16 @@ for n in y:
     z.append(2*n)
 z = [2,4
 
+```
+Product of two numpy array
 
+![Product](x4.png)
 
-
-
-
+```
+u = np.array([1,2])
+v = np.array([3,2])
+z = u*v
+==> [3,4]
 ```
 
 
