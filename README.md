@@ -366,3 +366,22 @@ Vector addition is a widely used operation in data science. Consider the vector 
 
 ```
 ![vector in python](x2.png)
+
+```
+u=[1,0]
+v=[0,1]
+z=[]
+for m,n in zip(u,v):
+    z.append(m+n)
+z = [1,1]
+    
+But it's easy in numpy:
+u = np.arary([1,0])
+v = np.arary([0,1])
+z = u+v
+==> [1,1]
+z = u-v
+==> [1,-1]
+```
+Array multiplication with a Scalar
+i[muliplication in numpy](x3.png)
