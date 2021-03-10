@@ -364,5 +364,5 @@ d[1:3] = -1,-2
 Vector
 Vector addition is a widely used operation in data science. Consider the vector 'u' with
 
-
 ```
+!(x2.png)["vector in python"]
