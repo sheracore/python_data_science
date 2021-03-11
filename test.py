@@ -3,33 +3,33 @@ import numpy as np
 from nba_api.stats.static import teams
 
 
-nba_teams = teams.get_teams()
-keys = nba_teams[0].keys()
-one_dict = {key:[] for key in keys}
+#nba_teams = teams.get_teams()
+#keys = nba_teams[0].keys()
+#one_dict = {key:[] for key in keys}
 
-for item in nba_teams:
-    for key, value in item.items():
-        one_dict[key].append(value)
+#for item in nba_teams:
+#   for key, value in item.items():
+#       one_dict[key].append(value)
 
-df_teams = pd.DataFrame(one_dict)
+#f_teams = pd.DataFrame(one_dict)
 #print(df_teams)
 
-df_warriors = df_teams[df_teams['state'] == 'New York']
-print(df_warriors)
-warriors_id = df_warriors[["id"]].values
-warriors_id = warriors_id[0][0]
+#f_warriors = df_teams[df_teams['state'] == 'New York']
+#rint(df_warriors)
+#arriors_id = df_warriors[["id"]].values
+#arriors_id = warriors_id[0][0]
 
 
-from nba_api.stats.endpoints import leaguegamefinder
+#rom nba_api.stats.endpoints import leaguegamefinder
 
-gamefinder = leaguegamefinder.LeagueGameFinder(team_id_nullable=warriors_id)
-games = gamefinder.get_data_frames()[0]
-print(games.head())
-games_home = games[games['MATCHUP'] == 'BKN @ HOU']
-games_away = games[games['MATCHUP'] =='BKN vs. DAL']
-print("__________________________")
-print(games_home.head())
-print(games_away.head())
+#amefinder = leaguegamefinder.LeagueGameFinder(team_id_nullable=warriors_id)
+#ames = gamefinder.get_data_frames()[0]
+#rint(games.head())
+#ames_home = games[games['MATCHUP'] == 'BKN @ HOU']
+#ames_away = games[games['MATCHUP'] =='BKN vs. DAL']
+#rint("__________________________")
+#rint(games_home.head())
+#rint(games_away.head())
 
 
 
@@ -80,7 +80,13 @@ print(z)
 result = np.dot(u,v)
 print(result)
 
-
-
+a = [[1,2,3],[6,5,4],[11,22,33]]
+A = np.array(a)
+print(A)
+print(A.ndim)
+print(A.shape)
+print(A.size)
+print(z.shape)
+print(A[0:2,2])
 
 
