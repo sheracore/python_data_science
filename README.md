@@ -337,7 +337,7 @@ print(games_away.head())
 
 ```
 
-# 1D Numpy
+# 1 Dimensional Numpy
 ## Numpy is a library for scientific computing. It has many useful functions. There are many other advantages 
 ## like speed an memory. Numpy is also the basis for pandas,.
 ```
@@ -450,6 +450,9 @@ np.linspace
 ![pi](x7.png)
 ![pi](x8.png)
 ![pi](x9.png)
+
+# 2 Dimensional Numpy
+
 
 
 
