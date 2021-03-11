@@ -499,5 +499,9 @@ C = np.dot(A,B)
 print(C)
 Can Not A*B !!!
 
+A=np.array([[1,2],[3,4],[5,6],[7,8]])
+B=np.array([[1,2,3],[4,5,6],[7,8,9]])
+C = np.dot(A,B)
+==> shapes (4,2) and (3,3) not aligned:
 ```
 
