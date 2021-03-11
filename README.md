@@ -453,6 +453,36 @@ np.linspace
 
 # 2 Dimensional Numpy
 
+![2 Dimensional Numpy](x1.png)
+
+```
+a = [[1,2,3],[6,5,4],[11,22,33]]
+A = np.array(a)
+A ==>
+[[ 1  2  3]
+ [ 6  5  4]
+ [11 22 33]]
+
+print(A.ndim)
+print(A.shape)
+print(A.size)
+
+A[1,0] ==> 6
+A[1,1] ==> 5
+A[1,2] ==> 4
+A[0,0:2] ==> [1,2]
+A[0:2,2] ==> [3,4]
+.
+.
+.
+
+
+
+
+
+
+```
+
 
 
 
