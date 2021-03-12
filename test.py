@@ -93,3 +93,12 @@ Y = np.array([[1,2],[2,1]])
 Z = X + Y
 print(Z)
 
+A = np.array([[0,1,1],[1,0,1]])
+B = np.array([[1,1],[1,1],[-1,1]])
+C = np.dot(A,B)
+print(C)
+A=np.array([[1,2],[3,4],[5,6],[7,8]])
+B=np.array([[1,2,3],[4,5,6],[7,8,9]])
+C = np.dot(A,B)
+print(C)
+
